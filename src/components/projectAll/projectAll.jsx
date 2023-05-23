@@ -69,8 +69,8 @@ const ProjectAll = ({ data }) => {
             </div>
             <section className="pl-[5vw] pr-[5vw] flex justify-center flex-col width-full">
                 <div className={styles.projects_all}>
-                    {sortedData.map((post) => (
-                        <div className="p-7" key={post.id}>
+                    {sortedData.map((post, key) => (
+                        <div key={key} className="p-7" >
                             <div className="card w-80 bg-base-100 shadow-xl">
                                 <figure className="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]">
                                     <img
