@@ -1,14 +1,64 @@
 ---
 const posts = await Astro.glob("./projects/*.md");
+
+import ProjectAll from "../components/projectAll";
 ---
 
-<p>Projets :</p>
-<ul>
-  {
-    posts.map((post) => (
-      <li>
-        <a href={post.url}>{post.frontmatter.title}</a>
-      </li>
-    ))
-  }
-</ul>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <section>
+      <ProjectAll client:load data={posts} />
+    </section>
+  </body>
+</html>
+
+<!-- save -->
+
+<!-- <section class="pl-[5vw] pr-[5vw] flex justify-center flex-col width-full">
+  <p>Projets :</p>
+  <style>
+    .projects_all {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .projects_all::after {
+      content: "";
+      flex: auto;
+    }
+  </style>
+  <div class="projects_all">
+    {
+      posts.map((post) => (
+        <div class="p-7">
+          <div class="card w-80 bg-base-100 shadow-xl">
+            <figure class="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]">
+              <img
+                src={`/img/heroImg/${post.frontmatter.heroImg}`}
+                alt={`${post.frontmatter.description}`}
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{`${post.frontmatter.title}`}</h2>
+              <p class="text-justify overflow-hidden line-clamp-4">
+                {post.frontmatter.description}
+              </p>
+              <div class="card-actions justify-end">
+                <a href={post.url} class="btn btn-primary">
+                  Voir plus
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section> -->

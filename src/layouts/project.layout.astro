@@ -7,7 +7,7 @@ import { map } from "astro/zod";
 const { title } = Astro.props.frontmatter;
 const { AC } = Astro.props.frontmatter;
 const { competence } = Astro.props.frontmatter;
-const { annee } = Astro.props.frontmatter;
+const { date } = Astro.props.frontmatter;
 
 const { heroImg } = Astro.props.frontmatter;
 ---
@@ -51,7 +51,7 @@ const { heroImg } = Astro.props.frontmatter;
             })
           }
         </p>
-        <p>{annee}</p>
+        <p>{date}</p>
       </div>
     </header>
 
