@@ -52,7 +52,7 @@ const ProjectAll = ({ data }) => {
             </div>
 
 
-            <div className="pl-[5vw] pr-[5vw] mt-4">
+            <div className="pl-[5vw] pr-[5vw] mt-4 flex flex-wrap gap-4 justify-center">
                 <button
                     className={selectedcompetence.includes('Comprendre') ? 'btn mr-2 btn-primary' : 'btn mr-2'}
                     onClick={() => handlecompetenceChange('Comprendre')}
@@ -83,7 +83,7 @@ const ProjectAll = ({ data }) => {
                 <div className={styles.projects_all}>
                     {sortedData.map((post, key) => (
                         <div key={key} className="p-7" >
-                            <div className="card w-80 bg-base-100 shadow-xl">
+                            <div className="card w-80 md:w-[45rem] lg:w-80 bg-base-100 shadow-xl">
                                 <figure className="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]">
                                     <img
                                         src={`/img/heroImg/${post.frontmatter.heroImg}`}

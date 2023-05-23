@@ -6,8 +6,14 @@
 
 @media (orientation: landscape) {
   .projects_all::after {
-    content: "";
-    flex: auto;
+    /* content: "";
+    flex: auto; */
+  }
+}
+
+@media (min-width: 640px) {
+  .projects_all {
+    justify-content: center;
   }
 }
 @media (orientation: portrait) {
