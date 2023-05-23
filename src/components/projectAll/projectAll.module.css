@@ -3,16 +3,15 @@
   flex-flow: row wrap;
   justify-content: space-between;
 }
-.projects_all::after {
-  content: "";
-  flex: auto;
-}
 
+@media (orientation: landscape) {
+  .projects_all::after {
+    content: "";
+    flex: auto;
+  }
+}
 @media (orientation: portrait) {
   .projects_all {
     justify-content: center;
-  }
-
-  .projects_all::after {
   }
 }

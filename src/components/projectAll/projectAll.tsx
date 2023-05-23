@@ -9,11 +9,11 @@ const ProjectAll = ({ data }) => {
         setSearchTerm(event.target.value);
     };
 
-    const handleSkillChange = (skill) => {
-        if (selectedcompetence.includes(skill)) {
-            setSelectedcompetence(selectedcompetence.filter((s) => s !== skill));
+    const handlecompetenceChange = (competence) => {
+        if (selectedcompetence.includes(competence)) {
+            setSelectedcompetence(selectedcompetence.filter((s) => s !== competence));
         } else {
-            setSelectedcompetence([...selectedcompetence, skill]);
+            setSelectedcompetence([...selectedcompetence, competence]);
         }
     };
 
@@ -26,7 +26,7 @@ const ProjectAll = ({ data }) => {
         } else {
             return (
                 (titleMatch || descriptionMatch) &&
-                selectedcompetence.some((skill) => post.frontmatter.competence.includes(skill))
+                selectedcompetence.some((competence) => post.frontmatter.competence.includes(competence))
             );
         }
     });
@@ -43,26 +43,26 @@ const ProjectAll = ({ data }) => {
             <div>
                 <button
                     className={selectedcompetence.includes('Comprendre') ? 'btn btn-primary' : 'btn'}
-                    onClick={() => handleSkillChange('Comprendre')}
+                    onClick={() => handlecompetenceChange('Comprendre')}
                 >
                     Comprendre
                 </button>
                 <button
                     className={selectedcompetence.includes('Développer') ? 'btn btn-primary' : 'btn'}
-                    onClick={() => handleSkillChange('Développer')}
+                    onClick={() => handlecompetenceChange('Développer')}
                 >
                     Développer
                 </button>
                 <button
                     className={selectedcompetence.includes('Exprimer') ? 'btn btn-primary' : 'btn'}
-                    onClick={() => handleSkillChange('Exprimer')}
+                    onClick={() => handlecompetenceChange('Exprimer')}
                 >
                     Exprimer
                 </button>
 
                 <button
                     className={selectedcompetence.includes('Concevoir') ? 'btn btn-primary' : 'btn'}
-                    onClick={() => handleSkillChange('Concevoir')}
+                    onClick={() => handlecompetenceChange('Concevoir')}
                 >
                     Concevoir
                 </button>
