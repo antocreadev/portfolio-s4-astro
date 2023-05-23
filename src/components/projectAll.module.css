@@ -7,3 +7,12 @@
   content: "";
   flex: auto;
 }
+
+@media (orientation: portrait) {
+  .projects_all {
+    justify-content: center;
+  }
+
+  .projects_all::after {
+  }
+}
