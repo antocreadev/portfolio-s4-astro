@@ -1,0 +1,65 @@
+---
+// import BaseHead from "../components/BaseHead.astro";
+
+import { map } from "astro/zod";
+
+// import Footer from "../components/Footer.astro";
+const { title } = Astro.props.frontmatter;
+const { AC } = Astro.props.frontmatter;
+const { competence } = Astro.props.frontmatter;
+const { annee } = Astro.props.frontmatter;
+
+const { heroImg } = Astro.props.frontmatter;
+---
+
+<html lang="fr">
+  <style>
+    .heroImage {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-color: #f5f5f5;
+    }
+  </style>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <body>
+    <header
+      class="pr-[5vw] pl-[5vw] mt-10 flex justify-start items-center flex-col mb-12"
+    >
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-8"
+      >
+        {title}
+      </h1>
+
+      <div
+        class="w-full h-[70vh] heroImage mb-8"
+        style={`background-image: url("/img/heroImg/${heroImg}/");`}
+      >
+      </div>
+
+      <div class="w-full flex justify-between">
+        <p>{competence}</p>
+        <p>
+          {AC ? "Apprentissages critiques couverts :" : null}
+          {
+            AC?.map((ac_child) => {
+              return ac_child + " ";
+            })
+          }
+        </p>
+        <p>{annee}</p>
+      </div>
+    </header>
+
+    <main class="w-full pr-[5vw] pl-[5vw] prose mb-11">
+      <slot />
+      <!-- your content is injected here -->
+    </main>
+
+    <!-- <Footer /> -->
+  </body>
+</html>

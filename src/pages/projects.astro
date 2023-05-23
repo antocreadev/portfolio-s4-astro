@@ -1,0 +1,14 @@
+---
+const posts = await Astro.glob("./projects/*.md");
+---
+
+<p>Projets :</p>
+<ul>
+  {
+    posts.map((post) => (
+      <li>
+        <a href={post.url}>{post.frontmatter.title}</a>
+      </li>
+    ))
+  }
+</ul>
