@@ -1,6 +1,12 @@
 ---
 import Project from "./projects.astro";
 import TestReact from "../components/test";
+
+const projet1 = await Astro.glob("./projects/SAE101.md");
+const projet2 = await Astro.glob("./projects/SAE102.md");
+const projet3 = await Astro.glob("./projects/SAE103.md");
+console.log(projet1[0].url);
+console.log(projet1[0].frontmatter.heroImg);
 ---
 
 <html lang="en">
@@ -12,8 +18,160 @@ import TestReact from "../components/test";
     <title>Astro</title>
   </head>
   <body>
-    <h1 class="text-red-500">Portfolio</h1>
-    <Project />
+    <section class="pl-[5vw] pr-[5vw]">
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-12 text-center"
+      >
+        Portfolio
+      </h1>
+
+      <div class="w-full flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 p-16">
+          <img src="img/home/main.png" alt="" />
+        </div>
+        <div
+          class="w-full md:w-1/2 text-center flex justify-center items-center flex-col"
+        >
+          <h2
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4"
+          >
+            Anthony Menghi
+          </h2>
+          <h2
+            class="italic text-base sm:text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl mb-20"
+          >
+            alias <span class="font-bold">antocreadev</span>
+          </h2>
+          <h2
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4"
+          >
+            Développeur créatif
+          </h2>
+          <p>
+            Lier l'art et l'informatique pour rendre le web plus beau et
+            intelligent
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pr-[5vw] pl-[5vw]">
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+      >
+        Projets
+      </h1>
+      <div class="flex flex-wrap justify-between">
+        <div class="p-7">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure
+              class="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]"
+            >
+              <img
+                src={`/img/heroImg/${projet1[0].frontmatter.heroImg}`}
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{`${projet1[0].frontmatter.title}`}</h2>
+              <p class="text-justify overflow-hidden line-clamp-4">
+                {`${projet1[0].frontmatter.description}`}
+              </p>
+              <div class="card-actions justify-end">
+                <a href={projet1[0].url} class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-7">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure
+              class="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]"
+            >
+              <img
+                src={`/img/heroImg/${projet2[0].frontmatter.heroImg}`}
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{`${projet2[0].frontmatter.title}`}</h2>
+              <p class="text-justify overflow-hidden line-clamp-4">
+                {`${projet2[0].frontmatter.description}`}
+              </p>
+              <div class="card-actions justify-end">
+                <a href={projet2[0].url} class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-7">
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure
+              class="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]"
+            >
+              <img
+                src={`/img/heroImg/${projet3[0].frontmatter.heroImg}`}
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">{`${projet3[0].frontmatter.title}`}</h2>
+              <p class="text-justify overflow-hidden line-clamp-4">
+                {`${projet3[0].frontmatter.description}`}
+              </p>
+              <div class="card-actions justify-end">
+                <a href={projet3[0].url} class="btn btn-primary">Voir plus</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-7">
+          <div
+            class="card-body w-96 bg-base-100 shadow-xl h-[25rem] flex flex-col justify-center items-center"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="48"
+                viewBox="0 96 960 960"
+                width="48"
+                ><path d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z"
+                ></path>
+              </svg>
+              <p>Voir plus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <Project /> -->
+    </section>
+
+    <section class="pr-[5vw] pl-[5vw] w-full">
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+      >
+        Compétences
+      </h1>
+    </section>
+
+    <section class="pr-[5vw] pl-[5vw] w-full">
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+      >
+        À propos
+      </h1>
+    </section>
+
+    <section class="pr-[5vw] pl-[5vw] w-full">
+      <h1
+        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+      >
+        Contact
+      </h1>
+    </section>
     <TestReact client:load />
   </body>
 </html>
