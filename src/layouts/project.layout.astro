@@ -1,6 +1,5 @@
 ---
-// import BaseHead from "../components/BaseHead.astro";
-
+// import mermaid from "mermaid";
 import { map } from "astro/zod";
 
 // import Footer from "../components/Footer.astro";
@@ -8,11 +7,11 @@ const { title } = Astro.props.frontmatter;
 const { AC } = Astro.props.frontmatter;
 const { competence } = Astro.props.frontmatter;
 const { date } = Astro.props.frontmatter;
-
 const { heroImg } = Astro.props.frontmatter;
 ---
 
 <html lang="fr">
+
   <style>
     .heroImage {
       background-size: cover;

@@ -1,115 +1,64 @@
 ---
-console.log("test");
 ---
 
-<div class="drawer text-ArgosBlue bg-slate-100">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col">
-    <header>
-      {/* <!-- Navbar --> */}
-      <nav
-        class="w-full navbar p-0 absolute z-50 top-0 h-[9.2vh]"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(92,36,131,1) 0%, rgba(32,41,103,1) 10%, rgba(92,36,131,1) 50%, rgba(232,58,117,1) 60%, rgba(255,221,0,1) 68%, rgba(255,238,124,1) 70%, rgba(255,221,0,1) 72%, rgba(232,58,117,1) 80%, rgba(92,36,131,1) 90%, rgba(32,41,103,1) 95%, rgba(92,36,131,1) 100%)",
-        }}
-      >
-        {/* MENU DRAWER  (view only on mobile browser) */}
-        {/* start (elements at the beginning of the navbar) */}
-        <div class="bg-slate-100 flex absolute top-0 w-screen h-[8.8vh]">
-          <div class="navbar-start w-min z-10">
-            <ul class="menu menu-horizontal px-1">
-              <div class="flex-none lg:hidden">
-                <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="inline-block w-6 h-6 stroke-current"
-                    ><path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h16"></path></svg
-                  >
-                </label>
-              </div>
-              <div class="flex-none hidden lg:block z-10">
-                <ul class="menu menu-horizontal">
-                  {/* <!-- Navbar menu content here --> */}
-                  <li>
-                    <a href="operations" class="hover:bg-slate-200"
-                      >Opérations</a>
-                  </li>
-                  <li>
-                    <a href="visualisation" class="hover:bg-slate-200"
-                      >Visualisation</a>
-                  </li>
-                  <li><a class="hover:bg-slate-100 cursor-default">|</a></li>
-                  <li>
-                    <a href="cameras" class="hover:bg-slate-200">Caméras</a>
-                  </li>
-                  <li><a class="hover:bg-slate-100 cursor-default">|</a></li>
-                  <li><a href="admin" class="hover:bg-slate-200">Admin</a></li>
-                  <li><a href="logs" class="hover:bg-slate-200">Logs</a></li>
-                </ul>
-              </div>
-            </ul>
-          </div>
-
-          {/* MENU */}
-          {/* center (elements in the center of the navbar) */}
-          <div class="z-0 absolute flex justify-center w-screen">
-            <a class="btn btn-ghost hover:bg-slate-200" href="./"> </a>
-          </div>
-          {/* end (elements in the navbar) */}
-          <div class="navbar-end hidden lg:flex w-min z-10 absolute right-0">
-            <div class="dropdown dropdown-end">
-              <label class="btn btn-ghost btn-circle hover:bg-slate-200">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="drawer">
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        {/* <!-- Navbar --> */}
+        <header class="z-[9999]">
+          <nav
+            class="w-full navbar fixed border-b-2 border-neutral-900 bg-slate-50 z-100"
+          >
+            <div class="flex-none lg:hidden">
+              <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="inline-block w-6 h-6 stroke-current"
+                  ><path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"></path></svg
+                >
               </label>
-              <ul
-                class="dropdown-content menu p-2 shadow bg-slate-100 rounded-box w-52"
-              >
-                <li><a>🇫🇷 Français</a></li>
-                <li><a>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Anglais</a></li>
+            </div>
+            <div class="flex-none hidden lg:block">
+              <ul class="menu menu-horizontal">
+                {/* <!-- Navbar menu content here --> */}
+                <li><a href="projects">Projets</a></li>
+                <li><a href="./#skills">Compétences</a></li>
+                <li><a href="./#about">À propos</a></li>
+                <li><a href="./#contact">Contact</a></li>
               </ul>
             </div>
-            <a href="help" class="btn btn-ghost btn-circle hover:bg-slate-200">
-            </a>
-            <a
-              href="contact"
-              class="btn btn-ghost btn-circle hover:bg-slate-200"
-            >
-            </a>
-            <a href="login" class="btn btn-ghost btn-circle hover:bg-slate-200">
-            </a>
-          </div>
-        </div>
+          </nav>
+        </header>
+        <!-- {children} -->
+        <slot />
+      </div>
+      <nav class="drawer-side">
+        <label for="my-drawer-3" class="drawer-overlay"></label>
+        <nav class="menu p-4 w-10/12 bg-slate-100">
+          <ul class="bg-slate-100">
+            {/* <!-- Sidebar content here --> */}
+            <li><a href="projects">Projets</a></li>
+            <li><a href="./#skills">Compétences</a></li>
+            <li><a href="./#about">À propos</a></li>
+            <li><a href="./#contact">Contact</a></li>
+          </ul>
+        </nav>
       </nav>
-    </header>
-    <div class="mt-12 flex flex-col">
-      <div></div>
     </div>
-  </div>
-  {
-    /* DRAWER NAVBAR CONTENT (menu that appears when you press the burger menu in mobile version*/
-  }
-  <nav class="drawer-side">
-    <label for="my-drawer-3" class="drawer-overlay"></label>
-    <nav class="menu p-4 w-10/12 justify-between bg-slate-200">
-      <ul>
-        {/* <!-- Sidebar content here --> */}
-        <li><a href="cameras">Caméras</a></li>
-        <li><a href="operations">Opérations</a></li>
-        <li><a href="visualisation">Visualisation</a></li>
-        <li><a href="admin">Admin</a></li>
-        <li><a href="logs">Logs</a></li>
-      </ul>
-      <ul>
-        <li><a href="contact"> Contact</a></li>
-        <li><a href="Information"> Information</a></li>
-        <li><a href="login"> Login</a></li>
-      </ul>
-    </nav>
-  </nav>
-</div>
+  </body>
+</html>
