@@ -8,58 +8,83 @@ import Layout from "../layouts/global.layout.astro";
 const projet1 = await Astro.glob("./projects/SAE101.md");
 const projet2 = await Astro.glob("./projects/SAE102.md");
 const projet3 = await Astro.glob("./projects/SAE103.md");
-console.log(projet1[0].url);
-console.log(projet1[0].frontmatter.heroImg);
 ---
 
 <Layout>
-  <section class="pl-[5vw] pr-[5vw]" id="home">
-    <h1
-      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-20 text-center"
-    >
-      Portfolio
-    </h1>
+  <style>
+    .imgMain {
+      overflow: hidden;
+    }
 
-    <div class="w-full flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2 p-16">
-        <img src="img/home/main.png" alt="" />
-      </div>
-      <div
-        class="w-full md:w-1/2 text-center flex justify-center items-center flex-col"
+    .cardColor {
+      background-color: #353e4e !important;
+    }
+
+    .btnColor {
+      background: #ff824b m !important;
+    }
+
+    .bg-projects {
+      background-image: url("/img/home/projetcs.webp") !important;
+      background-size: cover !important;
+      background-position: right !important;
+      background-repeat: no-repeat !important;
+    }
+  </style>
+
+  <!-- IMAGES POSITIONS ABSOLUTE -->
+  <img
+    class="absolute imgMaib w-full opacity-50 lg:opacity-100 z-[-100]"
+    src="img/home/home.webp"
+    alt=""
+  />
+  <img
+    class="hidden absolute imgMain opacity-50 lg:opacity-100 z-[-100] top-[100vh] left-[-40vw]"
+    src="img/home/projetcs.webp"
+    alt=""
+  />
+  <img
+    class="absolute imgMain  z-[-100] lg:z-[100]
+    opacity-50
+    lg:opacity-100
+     top-[327.5vh] left-[41vw]"
+    src="img/home/rond.webp"
+    alt=""
+  />
+
+  <!-- hero section -->
+  <section class="pl-[5vw] pr-[5vw] flex flex-col items-end" id="home">
+    <div class="w-full lg:w-1/2 relative z-[2]">
+      <h1
+        class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center lg:text-start"
       >
-        <h2
-          class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4"
-        >
-          Anthony Menghi
-        </h2>
-        <h2
-          class="italic text-base sm:text-sm md:text-xl lg:text-xl xl:text-xl 2xl:text-2xl mb-20"
-        >
-          alias <span class="font-bold">antocreadev</span>
-        </h2>
-        <h2
-          class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4"
-        >
-          Développeur créatif
-        </h2>
-        <p>
-          Lier l'art et l'informatique pour rendre le web plus beau et
-          intelligent
-        </p>
-      </div>
+        PORTFOLIO
+      </h1>
+      <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
+        Anthony Menghi
+      </h2>
+      <h3 class="text-lg xl:text-xl 2xl:text-2xl">alias antocreadev</h3>
+      <p class="text-base text-justify">
+        MMI student at the University of Corsica, I am passionate about web
+        development. I'd would like to be a fullstack developer and build things
+        for the mobile & web.
+      </p>
     </div>
   </section>
 
+  <!-- PROJETS -->
   <section class="pr-[5vw] pl-[5vw]">
     <h1
-      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+      class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center"
     >
-      Projets
+      PROJETS
     </h1>
-    <div class="projects_all">
+
+    <!-- 1 -->
+    <div class="projects_all bg-projects">
       <div class="p-7">
         <div
-          class="card w-[19rem] xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl"
+          class="card w-[19rem] xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl cardColor"
         >
           <figure class="min-w-[100%] max-w-[100%] min-h-[200px] max-h-[200px]">
             <img
@@ -73,12 +98,17 @@ console.log(projet1[0].frontmatter.heroImg);
               {`${projet1[0].frontmatter.description}`}
             </p>
             <div class="card-actions justify-end">
-              <a href={projet1[0].url} class="btn btn-primary">Voir plus</a>
+              <a
+                href={projet1[0].url}
+                class="btn btn-primary border-none"
+                style="background-color: #ff824b; ">Voir plus</a
+              >
             </div>
           </div>
         </div>
       </div>
 
+      <!-- 2 -->
       <div class="p-7">
         <div
           class="card w-80 xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl"
@@ -89,18 +119,23 @@ console.log(projet1[0].frontmatter.heroImg);
               alt="Shoes"
             />
           </figure>
-          <div class="card-body">
+          <div class="card-body cardColor">
             <h2 class="card-title">{`${projet2[0].frontmatter.title}`}</h2>
             <p class="text-justify overflow-hidden line-clamp-4">
               {`${projet2[0].frontmatter.description}`}
             </p>
             <div class="card-actions justify-end">
-              <a href={projet2[0].url} class="btn btn-primary">Voir plus</a>
+              <a
+                href={projet2[0].url}
+                class="btn btn-primary border-none"
+                style="background-color: #ff824b; ">Voir plus</a
+              >
             </div>
           </div>
         </div>
       </div>
 
+      <!-- 3 -->
       <div class="p-7">
         <div
           class="card w-80 xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl"
@@ -111,21 +146,26 @@ console.log(projet1[0].frontmatter.heroImg);
               alt="Shoes"
             />
           </figure>
-          <div class="card-body">
+          <div class="card-body cardColor">
             <h2 class="card-title">{`${projet3[0].frontmatter.title}`}</h2>
             <p class="text-justify overflow-hidden line-clamp-4">
               {`${projet3[0].frontmatter.description}`}
             </p>
-            <div class="card-actions justify-end">
-              <a href={projet3[0].url} class="btn btn-primary">Voir plus</a>
+            <div class="card-actions cardColor justify-end">
+              <a
+                href={projet3[0].url}
+                class="btn btn-primary border-none"
+                style="background-color: #ff824b; ">Voir plus</a
+              >
             </div>
           </div>
         </div>
       </div>
 
+      <!-- 4 voir plus -->
       <div class="p-7">
         <div
-          class="card-body w-80 xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl h-[28rem] flex flex-col justify-center items-center rounded-2xl"
+          class="card-body cardColor w-80 xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl h-[28rem] flex flex-col justify-center items-center rounded-2xl"
         >
           <a href="projects">
             <div class="flex flex-col justify-center items-center">
@@ -143,25 +183,36 @@ console.log(projet1[0].frontmatter.heroImg);
         </div>
       </div>
     </div>
-    <!-- <Project /> -->
+  </section>
+
+  <!-- ABOUT ME -->
+
+  <section id="about" class="pr-[5vw] pl-[5vw] w-full">
+    <h1
+      class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center mb-4"
+    >
+      À PROPOS
+    </h1>
+    <p class="w-full text-justify">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in ... Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in ...
+    </p>
   </section>
 
   <section id="skills" class="pr-[5vw] pl-[5vw] w-full">
     <h1
       class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
     >
-      Compétences
+      COMPÉTENCES
     </h1>
 
     <RadarChartfrom client:only="react" />
-  </section>
-
-  <section id="about" class="pr-[5vw] pl-[5vw] w-full">
-    <h1
-      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
-    >
-      À propos
-    </h1>
   </section>
 
   <section id="contact" class="pr-[5vw] pl-[5vw] w-full">
@@ -172,8 +223,6 @@ console.log(projet1[0].frontmatter.heroImg);
     </h1>
   </section>
   <TestReact client:load />
-
-
 
   <style>
     .projects_all {
