@@ -43,19 +43,13 @@ console.log(Astro.url.pathname);
                 {
                   Astro.url.pathname === '/' ?
                   <li><a href="projects">Projets</a></li>
-                  <li><a href="#skills">Compétences</a></li>
                   <li><a href="#about">À propos</a></li>
-                  <li><a href="#contact">Contact</a></li>
                   : Astro.url.pathname === '/projects' ? 
                   <li><a href="projects">Projets</a></li>
-                  <li><a href="../#skills">Compétences</a></li>
                   <li><a href="../#about">À propos</a></li>
-                  <li><a href="../#contact">Contact</a></li>
                   : 
                   <li><a href="../projects">Projets</a></li>
-                  <li><a href="../../#skills">Compétences</a></li>
                   <li><a href="./../#about">À propos</a></li>
-                  <li><a href="../../#contact">Contact</a></li>
                 }
               </ul>
             </div>
@@ -106,19 +100,13 @@ console.log(Astro.url.pathname);
             {
               Astro.url.pathname === '/' ?
               <li><a href="projects">Projets</a></li>
-              <li><a href="#skills">Compétences</a></li>
               <li><a href="#about">À propos</a></li>
-              <li><a href="#contact">Contact</a></li>
               : Astro.url.pathname === '/projects' ? 
               <li><a href="projects">Projets</a></li>
-              <li><a href="../#skills">Compétences</a></li>
               <li><a href="../#about">À propos</a></li>
-              <li><a href="../#contact">Contact</a></li>
               : 
               <li><a href="../projects">Projets</a></li>
-              <li><a href="../../#skills">Compétences</a></li>
               <li><a href="./../#about">À propos</a></li>
-              <li><a href="../../#contact">Contact</a></li>
             }
           </ul>
         </nav>
