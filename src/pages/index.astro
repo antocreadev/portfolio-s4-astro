@@ -30,15 +30,11 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
       background-position: right !important;
       background-repeat: no-repeat !important;
     }
-    @media (max-width: 1024px) {
-      .bg-projects {
-      }
-    }
   </style>
 
   <!-- IMAGES POSITIONS ABSOLUTE -->
   <img
-    class="absolute sm:top-[-11vh] lg:top-[-8vh] lg:left-[5vw] imgMaib w-full lg:w-9/12 opacity-50 lg:opacity-100 z-[-100]"
+    class="absolute top-[5vh] sm:top-[-18vh] lg:top-[-12vh] lg:left-[5vw] imgMaib w-full lg:w-9/12 opacity-50 lg:opacity-100 z-[-100]"
     src="img/home/home.webp"
     alt=""
   />
@@ -47,11 +43,6 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
     src="img/home/projetcs.webp"
     alt=""
   /> -->
-  <img
-    class="absolute imgMain z-[-100] lg:z-[100] opacity-50 lg:opacity-100 top-[327.5%] left-[41%]"
-    src="img/home/rond.webp"
-    alt=""
-  />
 
   <!-- hero section -->
   <section
@@ -69,16 +60,16 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
       </h2>
       <h3 class="text-lg xl:text-xl 2xl:text-2xl">alias antocreadev</h3>
       <p class="text-base text-justify">
-        Étudiant en BUT MMI à Pascal Paoli de Corse, je suis passionné par la
-        création. J'aime créer et entreprendre des nouvelles choses. Je souhaite
-        devenir développeur fullstack spécialisé dans les médias interactifs ou
-        dans les jeux vidéo.
+        Étudiant en BUT MMI à l'Université de Corse Pascal Paoli, je suis
+        passionné par la création. J'aime créer et entreprendre des nouvelles
+        choses. Je souhaite devenir développeur fullstack spécialisé dans les
+        médias interactifs ou dans les jeux vidéo.
       </p>
     </div>
   </section>
 
   <!-- PROJETS -->
-  <section class="pr-[5vw] pl-[5vw]">
+  <section class="pr-[5vw] pl-[5vw] bg-projects">
     <h1
       class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center"
     >
@@ -86,7 +77,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
     </h1>
 
     <!-- 1 -->
-    <div class="projects_all bg-projects">
+    <div class="projects_all">
       <div class="p-7">
         <div
           class="card w-[19rem] xl:w-[32rem] lg:w-[25rem] md:w-[43rem] sm:w-[35rem] bg-base-100 shadow-xl cardColor"
@@ -175,6 +166,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
           <a href="projects">
             <div class="flex flex-col justify-center items-center">
               <svg
+                style="fill: #B8BDC3;"
                 xmlns="http://www.w3.org/2000/svg"
                 height="48"
                 viewBox="0 96 960 960"
@@ -194,23 +186,35 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
 
   <section id="about" class="pr-[5vw] pl-[5vw] w-full">
     <h1
-      class="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center mb-4"
+      class="relative text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mt-24 text-center mb-4"
     >
       À PROPOS
+      <img
+        class="absolute lg:hidden imgMain z-[-100] lg:z-[100] opacity-50 lg:opacity-100 top-[-100px] left-[160px]"
+        src="img/home/rond.webp"
+        alt=""
+      />
     </h1>
-    <p class="w-full text-justify">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in ... Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in ...
-    </p>
+    <div class="block lg:flex justify-center items-center">
+      <img class="hidden lg:block w-1/2" src="img/home/rond.webp" alt="" />
+      <p class="w-full text-justify lg:w-1/2">
+        Je suis Anthony, un étudiant de 20 ans passionné par la création. En
+        tant qu'étudiant en BUT MMI à l'Université de Corse Pascal Paoli, mon
+        objectif est de devenir développeur fullstack spécialisé dans les médias
+        interactifs ou les jeux vidéo. Je maîtrise une variété de technologies
+        telles que React, TypeScript, Docker, Git, Three.js, Python et bien
+        d'autres. Cependant, je considère que les compétences humaines, telles
+        que l'adaptabilité et la communication, sont tout aussi importantes que
+        les compétences techniques. En plus du développement, je suis polyvalent
+        dans des domaines tels que le montage vidéo, marketing, stratégie de
+        communication, l'écriture et le graphisme 2D/3D avec des logiciels tels
+        qu'Adobe. Mon portfolio reflète ma passion, mon engagement et ma volonté
+        constante d'apprendre et de repousser les limites de la créativité.
+      </p>
+    </div>
   </section>
 
-  <section id="skills" class="pr-[5vw] pl-[5vw] w-full">
+  <!-- <section id="skills" class="pr-[5vw] pl-[5vw] w-full">
     <h1
       class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
     >
@@ -218,16 +222,27 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
     </h1>
 
     <RadarChartfrom client:only="react" />
-  </section>
+  </section> -->
 
-  <section id="contact" class="pr-[5vw] pl-[5vw] w-full">
+  <!-- <section id="contact" class="pr-[5vw] pl-[5vw] w-full">
     <h1
       class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
     >
       Contact
     </h1>
-  </section>
-  <TestReact client:load />
+
+    <svg
+      style="fill: #B8BDC3;"
+      xmlns="http://www.w3.org/2000/svg"
+      height="48"
+      viewBox="0 -960 960 960"
+      width="48"
+      ><path
+        d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+      ></path></svg
+    >
+  </section> -->
+  <!-- <TestReact client:load /> -->
 
   <style>
     .projects_all {

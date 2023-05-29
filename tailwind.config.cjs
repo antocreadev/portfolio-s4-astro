@@ -8,11 +8,25 @@ module.exports = {
           css: {
             h1: {
               width: "90vw",
-              textAlign: "justify",
+              color: "white",
+            },
+            h2: {
+              width: "90vw",
+              color: "white",
+            },
+            h3: {
+              width: "90vw",
+              color: "white",
             },
             p: {
               width: "90vw",
               textAlign: "justify",
+              color: "white",
+            },
+            li: {
+              width: "90vw",
+              textAlign: "justify",
+              color: "white",
             },
             img: {
               margin: "auto",
