@@ -23,6 +23,11 @@ module.exports = {
               textAlign: "justify",
               color: "white",
             },
+            a: {
+              width: "90vw",
+              textAlign: "justify",
+              color: "white",
+            },
             li: {
               width: "90vw",
               textAlign: "justify",
@@ -30,7 +35,7 @@ module.exports = {
             },
             img: {
               margin: "auto",
-              width: "50%",
+              maxHeight: "50vh",
             },
           },
         },

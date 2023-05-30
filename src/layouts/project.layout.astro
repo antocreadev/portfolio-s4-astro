@@ -35,16 +35,8 @@ const { heroImg } = Astro.props.frontmatter;
     </div>
 
     <div class="w-full flex justify-between">
-      <p>{competence}</p>
-      <p>
-        {AC ? "Apprentissages critiques couverts :" : null}
-        {
-          AC?.map((ac_child) => {
-            return ac_child + " ";
-          })
-        }
-      </p>
-      <p>{date}</p>
+      <p>Compétences : {competence}</p>
+      <p>Date : {date}</p>
     </div>
   </header>
 
