@@ -11,16 +11,16 @@ const { heroImg } = Astro.props.frontmatter;
 <Layout>
   <style>
     .heroImage {
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed;
-      background-color: #f5f5f5;
+      /* background-attachment: fixed; */
+      background-color: #1f2937;
     }
   </style>
 
   <header
-    class="pr-[5vw] pl-[5vw] mt-24 flex justify-start items-center flex-col mb-12 "
+    class="pr-[5vw] pl-[5vw] mt-24 flex justify-start items-center flex-col mb-12"
   >
     <h1
       class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-8"
