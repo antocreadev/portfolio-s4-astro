@@ -52,32 +52,42 @@ const ProjectAll = ({ data }) => {
 
             <div className="pl-[5vw] pr-[5vw] mt-4 flex flex-wrap gap-4 justify-center">
                 <button
-                    className={selectedcompetence.includes('Comprendre') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b]' : 'btn mr-2 hover:bg-[#ff824b]'}
+                    className={selectedcompetence.includes('Comprendre') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b]' : 'btn mr-2 hover:bg-[#ffb494]'}
                     onClick={() => handlecompetenceChange('Comprendre')}
                 >
                     Comprendre
                 </button>
                 <button
                 
-                    className={selectedcompetence.includes('Développer') ? 'btn bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ff824b]'}
+                    className={selectedcompetence.includes('Développer') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ffb494] focus:bg-[#ff824b]'}
                     onClick={() => handlecompetenceChange('Développer')}
                 >
                     Développer
                 </button>
                 <button
 
-                    className={selectedcompetence.includes('Exprimer') ? 'btn hover:bg-[#ff824b] bg-[#ff824b]  mr-2' : 'btn mr-2 hover:bg-[#ff824b]'}
+                    className={selectedcompetence.includes('Exprimer') ? 'btn hover:bg-[#ff824b] bg-[#ff824b]  mr-2' : 'btn mr-2 hover:bg-[#ffb494]'}
                     onClick={() => handlecompetenceChange('Exprimer')}
                 >
                     Exprimer
                 </button>
 
                 <button
-                    className={selectedcompetence.includes('Concevoir') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ff824b]'}
+                    className={selectedcompetence.includes('Concevoir') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ffb494]'}
                     onClick={() => handlecompetenceChange('Concevoir')}
                 >
                     Concevoir
                 </button>
+
+
+                <button
+                    className={selectedcompetence.includes('Entreprendre') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ffb494]'}
+                    onClick={() => handlecompetenceChange('Entreprendre')}
+                >
+                    Entreprendre
+                </button>
+
+
             </div>
             <section className="pl-[5vw] pr-[5vw] flex justify-center flex-col width-full">
                 <div className={styles.projects_all}>

@@ -6,6 +6,11 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
+            ul :{
+              overflowWrap : "break-word",
+              padding :"0px"
+
+            },
             h1: {
               width: "90vw",
               color: "white",
@@ -22,6 +27,7 @@ module.exports = {
               width: "90vw",
               textAlign: "justify",
               color: "white",
+              overflowWrap : "break-word"
             },
             a: {
               width: "90vw",
