@@ -52,27 +52,42 @@ const ProjectAll = ({ data }) => {
 
             <div className="pl-[5vw] pr-[5vw] mt-4 flex flex-wrap gap-4 justify-center">
                 <button
-                    className={selectedcompetence.includes('Comprendre') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b]' : 'btn mr-2 hover:bg-[#ffb494]'}
-                    onClick={() => handlecompetenceChange('Comprendre')}
+                    className={selectedcompetence.includes('Graphisme') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b] text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                    onClick={() => handlecompetenceChange('Graphisme')}
                 >
-                    Comprendre
+                    Graphisme
                 </button>
                 <button
                 
-                    className={selectedcompetence.includes('Développer') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ffb494] focus:bg-[#ff824b]'}
-                    onClick={() => handlecompetenceChange('Développer')}
+                    className={selectedcompetence.includes('FrontEnd') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b] text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800 '}
+                    onClick={() => handlecompetenceChange('FrontEnd')}
                 >
-                    Développer
+                    FrontEnd
                 </button>
                 <button
 
-                    className={selectedcompetence.includes('Exprimer') ? 'btn hover:bg-[#ff824b] bg-[#ff824b]  mr-2' : 'btn mr-2 hover:bg-[#ffb494]'}
-                    onClick={() => handlecompetenceChange('Exprimer')}
+                    className={selectedcompetence.includes('BackEnd') ? 'btn hover:bg-[#ff824b]  bg-[#ff824b]  mr-2 text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                    onClick={() => handlecompetenceChange('BackEnd')}
                 >
-                    Exprimer
+                    BackEnd
                 </button>
 
                 <button
+                className={selectedcompetence.includes('Audiovisuel') ? 'btn hover:bg-[#ff824b]  bg-[#ff824b]  mr-2 text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                onClick={() => handlecompetenceChange('Audiovisuel')}
+                >
+                Audiovisuel
+                </button>
+
+
+                <button
+                className={selectedcompetence.includes('Communication') ? 'btn hover:bg-[#ff824b]  bg-[#ff824b]  mr-2 text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                onClick={() => handlecompetenceChange('Communication')}
+                >
+                Communication
+                </button>
+
+                {/* <button
                     className={selectedcompetence.includes('Concevoir') ? 'btn bg-[#ff824b] hover:bg-[#ff824b] mr-2' : 'btn mr-2 hover:bg-[#ffb494]'}
                     onClick={() => handlecompetenceChange('Concevoir')}
                 >
@@ -85,7 +100,7 @@ const ProjectAll = ({ data }) => {
                     onClick={() => handlecompetenceChange('Entreprendre')}
                 >
                     Entreprendre
-                </button>
+                </button> */}
 
 
             </div>
@@ -102,7 +117,7 @@ const ProjectAll = ({ data }) => {
                                     />
                                 </figure>
                                 <div className="card-body">
-                                    <h2 className="card-title">{post.frontmatter.title}</h2>
+                                    <h2 className="card-title line-clamp-1">{post.frontmatter.title}</h2>
                                     <p className="text-justify overflow-hidden line-clamp-4">
                                         {post.frontmatter.description}
                                     </p>

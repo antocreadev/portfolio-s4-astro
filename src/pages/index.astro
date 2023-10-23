@@ -1,15 +1,19 @@
 ---
 import TestReact from "../components/test";
-
 import RadarChartfrom from "../components/radarChart";
+
+import Mail from "../components/mail.astro";
+import Github from "../components/Github.astro"
+import Instagram from "../components/Instagram.astro"
+import Twitter from "../components/Twitter.astro"
 
 import Layout from "../layouts/global.layout.astro";
 
-const projet1 = await Astro.glob("./projects/SAE302.md");
-const projet2 = await Astro.glob("./projects/SAE301.md");
-const projet3 = await Astro.glob("./projects/SAE103.md");
----
+const projet1 = await  Astro.glob("./projects/argos.md");
+const projet2 = await Astro.glob("./projects/datavizEsperanceVieUe.md");
+const projet3 = await Astro.glob("./projects/scopra.md");
 
+---
 <Layout>
   <style>
     .imgMain {
@@ -34,7 +38,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
 
   <!-- IMAGES POSITIONS ABSOLUTE -->
   <img
-    class="absolute top-[5vh] sm:top-[-18vh] lg:top-[-12vh] lg:left-[5vw] imgMaib w-full lg:w-9/12 opacity-50 lg:opacity-100 z-[-100]"
+    class="absolute top-[5vh] sm:top-[-18vh] lg:top-[-12vh] imgMaib w-full lg:w-9/12 opacity-50 lg:opacity-100 z-[-100]"
     src="img/home/home.webp"
     alt=""
   />
@@ -56,15 +60,14 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
         PORTFOLIO
       </h1>
       <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
-        Anthony Menghi
+        Antò Menghi
       </h2>
       <h3 class="text-lg xl:text-xl 2xl:text-2xl">alias antocreadev</h3>
       <p class="text-base text-justify">
-        Étudiant en BUT MMI à l'Université de Corse Pascal Paoli, je suis
-        passionné par la création. J'aime créer et entreprendre des nouvelles
-        choses. Je souhaite devenir développeur fullstack spécialisé dans les
-        médias interactifs.
+        Développeur fullstack & Creative technologist.
       </p>
+
+        <p class="text-base text-justify">Lier l'art et l'informatique pour rendre le monde plus beau et intelligent.</p>
     </div>
   </section>
 
@@ -89,7 +92,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
             />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">{`${projet1[0].frontmatter.title}`}</h2>
+            <h2 class="card-title line-clamp-1">{`${projet1[0].frontmatter.title}`}</h2>
             <p class="text-justify overflow-hidden line-clamp-4">
               {`${projet1[0].frontmatter.description}`}
             </p>
@@ -116,7 +119,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
             />
           </figure>
           <div class="card-body rounded-b-xl cardColor">
-            <h2 class="card-title">{`${projet2[0].frontmatter.title}`}</h2>
+            <h2 class="card-title line-clamp-1">{`${projet2[0].frontmatter.title}`}</h2>
             <p class="text-justify overflow-hidden line-clamp-4">
               {`${projet2[0].frontmatter.description}`}
             </p>
@@ -143,7 +146,7 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
             />
           </figure>
           <div class="card-body rounded-b-xl cardColor">
-            <h2 class="card-title">{`${projet3[0].frontmatter.title}`}</h2>
+            <h2 class="card-title line-clamp-1">{`${projet3[0].frontmatter.title}`}</h2>
             <p class="text-justify overflow-hidden line-clamp-4">
               {`${projet3[0].frontmatter.description}`}
             </p>
@@ -182,6 +185,17 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
     </div>
   </section>
 
+
+  <!-- <section id="skills" class="pr-[5vw] pl-[5vw] mt-[10vh] w-full">
+    <h1
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
+    >
+      COMPÉTENCES
+    </h1>
+
+    <RadarChartfrom client:only="react" />
+  </section> -->
+
   <!-- ABOUT ME -->
 
   <section id="about" class="pr-[5vw] pl-[5vw] w-full">
@@ -195,38 +209,43 @@ const projet3 = await Astro.glob("./projects/SAE103.md");
         alt=""
       />
     </h1>
-    <div class="block lg:flex justify-center items-center">
+    <div class="block lg:flex
+    justify-center items-center">
       <img class="hidden lg:block w-1/2" src="img/home/rond.webp" alt="" />
-      <p class="w-full text-justify lg:w-1/2 mb-12">
-        Je suis Anthony, un étudiant de 20 ans passionné par la création. En
-        tant qu'étudiant en BUT MMI à l'Université de Corse Pascal Paoli, mon
-        objectif est de devenir développeur fullstack spécialisé dans les médias
-        interactifs ou les jeux vidéo. Je maîtrise une variété de technologies
-        telles que React, TypeScript, Docker, Git, Three.js, Python et bien
-        d'autres. Cependant, je considère que les compétences humaines, telles
-        que l'adaptabilité et la communication, sont tout aussi importantes que
-        les compétences techniques. En plus du développement, je suis polyvalent
-        dans des domaines tels que le montage vidéo, marketing, stratégie de
-        communication, l'écriture et le graphisme 2D/3D avec des logiciels tels
-        qu'Adobe. Mon portfolio reflète ma passion, mon engagement et ma volonté
-        constante d'apprendre et de repousser les limites de la créativité.
+      <p class="w-full text-justify lg:w-1/2 mb-12 lg:mb-4">
+        Je suis Anthony MENGHI, actuellement inscrit en troisième année de licence en Sciences pour l'Ingénieur (SPI) avec une spécialisation en Informatique.
+        <br/>
+        Mon parcours académique et professionnel est dédié au développement informatique, avec une passion prononcée pour le développement web et d'applications. 
         <br />
-        Pour me contacter voici mon email : <a
-          href="mailto:anthonymenghi@icloud.com">anthonymenghi@icloud.com</a
-        >
+        J'ai acquis des compétences approfondies à la fois en développement front-end et en développement back-end.
+        <br /> 
+        Mon intérêt va au-delà du code, et englobe des domaines variés tels que les médias interactifs, les algorithmes, les structures de données, les réseaux et l'intelligence artificielle.
+        <br />
+        Mon expérience professionnelle précédente en tant que développeur full stack junior m'a permis de mettre en pratique mes compétences et de développer une solide compréhension des besoins du marché.
+        <br />
+        Je me décrirais comme étant sérieux, déterminé et constamment avide d'apprendre, cherchant sans cesse à me perfectionner dans le monde en constante évolution de la technologie.
+        <br />
+
+
+
       </p>
+
+    </div>
+    <div class="flex justify-end w-full">
+      <div
+      class="flex justify-around items-center w-full
+      lg:w-1/2
+      mb-8
+      "
+      >
+        <Mail />
+        <Github />
+        <Instagram />
+        <Twitter />
+      </div>
     </div>
   </section>
 
-  <!-- <section id="skills" class="pr-[5vw] pl-[5vw] w-full">
-    <h1
-      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-center"
-    >
-      COMPÉTENCES
-    </h1>
-
-    <RadarChartfrom client:only="react" />
-  </section> -->
 
   <!-- <section id="contact" class="pr-[5vw] pl-[5vw] w-full">
     <h1
