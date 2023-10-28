@@ -11,7 +11,7 @@ competence : "FrontEnd"
 
 Le projet vise à concevoir des visualisations de données pour le web avec un support animé. L'objectif est de répondre à la question : "Comment concevoir des visualisations de données pertinentes et conformes à un objectif de communication ?" Les principales étapes comprennent le choix, l'analyse et le traitement des données, la création de supports visuels pour le web, l'implémentation de supports animés, et la création de pages web responsives avec des interactions riches.
 
-[![image1.png](/img/datavizEsperanceVieUe/image1.png)](https:dataviz-esperance-vie-ue.antocrea.dev)
+[![image1.png](/img/datavizEsperanceVieUe/image1.png)](https://dataviz-esperance-vie-ue.antocrea.dev)
 
 ## II. Choix, Analyse et Traitement des Données
 
@@ -46,10 +46,10 @@ Le projet vise à concevoir des visualisations de données pour le web avec un s
 
 Le projet a couvert la sélection, le traitement, la création de supports visuels, l'implémentation de supports animés, l'animation, l'interactivité, la responsivité et l'hébergement.
 
-Le projet est accessible [ici](https:dataviz-esperance-vie-ue.antocrea.dev).
+Le projet est accessible [ici](https://dataviz-esperance-vie-ue.antocrea.dev).
 
 ## VIII. Annexe
 
-- [Lien vers le site web](https:dataviz-esperance-vie-ue.antocrea.dev)
+- [Lien vers le site web](https://dataviz-esperance-vie-ue.antocrea.dev)
 - [Script Python](https://github.com/antoCreaDev/SAE303-DATAVIZ/blob/main/public/main.py)
 - [GitHub Code Source](https://github.com/antoCreaDev/SAE303-DATAVIZ)
