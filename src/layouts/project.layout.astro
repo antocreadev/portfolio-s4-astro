@@ -1,0 +1,48 @@
+---
+import Layout from "./global.layout.astro";
+// import Footer from "../components/Footer.astro";
+const { title } = Astro.props.frontmatter;
+const { competence } = Astro.props.frontmatter;
+const { date } = Astro.props.frontmatter;
+const { heroImg } = Astro.props.frontmatter;
+---
+
+<Layout>
+  <style>
+    .heroImage {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-attachment: fixed; */
+      background-color: #1f2937;
+    }
+  </style>
+
+  <header
+    class="pr-[5vw] pl-[5vw] mt-24 flex justify-start items-center flex-col mb-12"
+  >
+    <h1
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-8"
+    >
+      {title}
+    </h1>
+
+    <div
+      class="w-full h-[70vh] heroImage mb-8"
+      style={`background-image: url("/img/heroImg/${heroImg}/");`}
+    >
+    </div>
+
+    <div class="w-full flex justify-between">
+      <p>Compétences : {competence}</p>
+      <p>Date : {date}</p>
+    </div>
+  </header>
+
+  <main class="w-full pr-[5vw] pl-[5vw] prose mb-11">
+    <slot />
+    <!-- your content is injected here -->
+  </main>
+
+  <!-- <Footer /> -->
+</Layout>

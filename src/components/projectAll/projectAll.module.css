@@ -1,0 +1,23 @@
+.projects_all {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@media (orientation: landscape) {
+  .projects_all::after {
+    /* content: "";
+    flex: auto; */
+  }
+}
+
+@media (min-width: 640px) {
+  .projects_all {
+    justify-content: center;
+  }
+}
+@media (orientation: portrait) {
+  .projects_all {
+    justify-content: center;
+  }
+}
