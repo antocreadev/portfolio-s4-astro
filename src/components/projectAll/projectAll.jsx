@@ -52,10 +52,10 @@ const ProjectAll = ({ data }) => {
 
             <div className="pl-[5vw] pr-[5vw] mt-4 flex flex-wrap gap-4 justify-center">
                 <button
-                    className={selectedcompetence.includes('Graphisme') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b] text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
-                    onClick={() => handlecompetenceChange('Graphisme')}
+                    className={selectedcompetence.includes('Graphics') ? 'btn mr-2 hover:bg-[#ff824b] bg-[#ff824b] text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                    onClick={() => handlecompetenceChange('Graphics')}
                 >
-                    Graphisme
+                    Graphics
                 </button>
                 <button
                 
@@ -73,10 +73,10 @@ const ProjectAll = ({ data }) => {
                 </button>
 
                 <button
-                className={selectedcompetence.includes('Audiovisuel') ? 'btn hover:bg-[#ff824b]  bg-[#ff824b]  mr-2 text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
-                onClick={() => handlecompetenceChange('Audiovisuel')}
+                className={selectedcompetence.includes('Audiovisual') ? 'btn hover:bg-[#ff824b]  bg-[#ff824b]  mr-2 text-white' : 'btn mr-2 hover:bg-[#ffb494] hover:text-gray-800'}
+                onClick={() => handlecompetenceChange('Audiovisual')}
                 >
-                Audiovisuel
+                Audiovisual
                 </button>
 
 
@@ -123,7 +123,7 @@ const ProjectAll = ({ data }) => {
                                     </p>
                                     <div className="card-actions justify-end">
                                         <a href={post.url} className="btn btn-primary border-none" style={{ backgroundColor: "#ff824b" }}>
-                                            Voir plus
+                                            See more
                                         </a>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@ title: Mon premier portfolio
 heroImg: "SAE105.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2021
-description : "Ce portfolio a été créer après 6 mois d'apprentissage en BUT MMI. Il a été créer en HTML5, CSS33 et avec quelques lignes de Javascript. Le but de ce portfolio était de faire un point de l'apprentissage et de répondre au travail demandé lors du premier semestre."
+description : "This portfolio was created after 6 months of learning in the Bachelor's degree program in Multimedia and Internet Technologies (BUT MMI). It was developed using HTML5, CSS3, and a few lines of Javascript. The purpose of this portfolio was to assess the learning progress and address the tasks assigned during the first semester."
 competence : "FrontEnd"
 
 ---

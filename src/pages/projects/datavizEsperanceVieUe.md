@@ -3,7 +3,7 @@ title: Dataviz - Esperance de vie dans l'UE
 heroImg: "SAE303.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2023
-description : "The project aims to design data visualizations for the web with animated support. The goal is to address the question: "How to design relevant data visualizations aligned with a communication objective?" The main steps involve data selection, analysis, and processing, creating visual assets for the web, implementing animated supports, and creating responsive web pages with rich interactions."
+description : "The project aims to design data visualizations for the web with animated support. The goal is to address the question: 'How to design relevant data visualizations aligned with a communication objective?' The main steps involve data selection, analysis, and processing, creating visual assets for the web, implementing animated supports, and creating responsive web pages with rich interactions."
 competence : "FrontEnd"
 
 ---

@@ -4,7 +4,7 @@ heroImg: "argos.webp"
 layout: "../../layouts/project.layout.astro"
 date: 2023
 description: "ARGOS (Automatic Route for GeOlocation System) is a digital tool designed to determine the geolocation of hotspots in vegetation fires in mountainous areas using thermal images obtained by a drone-mounted camera. The project is developed as part of the GOLIAT project affiliated with UMR SPE 6134 at the University of Corsica, aiming to provide a tool to aid in the fight against forest fires. Due to the increasing intensity of fires linked to climate change, firefighters are facing increasingly challenging tasks. The ARGOS project calculates the GPS positions of detected hotspots from drone thermal images and generates results in various file formats: txt, csv, kml, gpx, json, geojson, and shapefile. These results can be viewed on a satellite map integrated into the application and can also be downloaded for integration into other software. It should be noted that the ARGOS project is currently under patent and enjoys intellectual property protection."
-competence: "FrontEnd, BackEnd, Graphisme"
+competence: "FrontEnd, BackEnd, Graphics"
 ---
 
 ## I. Introduction

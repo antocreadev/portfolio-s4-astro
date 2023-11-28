@@ -3,7 +3,7 @@ title: Dataviz - Scopra
 heroImg: "scopra.webp"
 layout: "../../layouts/project.layout.astro"
 date: 2023
-description: "Scopra est un site internet créé à l'occasion du challenge DataViz, visant à géolocaliser les principaux sites d'intérêt en Corse. Le site référence les monuments en Corse à partir du jeu de données de la plateforme opendata.corsica. Pour rendre le site plus interactif, nous avons développé une interface graphique permettant aux utilisateurs de visualiser les différents lieux sur une carte interactive de la Corse, en utilisant la bibliothèque open-source Leaflet JS. Le projet comprend un algorithme de tri pour la barre de recherche et les catégories, une identité graphique avec des photos, un logo et une baseline, ainsi qu'une implémentation d'UI design en CSS pour améliorer l'accessibilité et la compréhension du site."
+description: "Scopra is a website created for the DataViz challenge, aiming to geolocate the main points of interest in Corsica. The site references monuments in Corsica based on the dataset from the opendata.corsica platform. To make the site more interactive, we developed a graphical interface that allows users to visualize different locations on an interactive map of Corsica, using the open-source Leaflet JS library. The project includes a sorting algorithm for the search bar and categories, a visual identity with photos, a logo, and a tagline, as well as a UI design implementation in CSS to enhance accessibility and understanding of the site."
 competence: "FrontEnd, DataViz"
 ---
 # Scopra - Geolocation of Monuments in Corsica

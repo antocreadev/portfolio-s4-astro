@@ -3,46 +3,45 @@ title: Affiche - Carnavale di Brandu
 heroImg: "SAE103.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2021
-competence : "Graphisme"
-description : "Le carnaval de Brando manquait d'éléments visuels (affiche, logotype, éléments web et audiovisuels et merch/ goodies ) pour le faire connaître. Ainsi nous avons créé une charte graphique; nous allons détailler le processus de création de chaque élément créé."
+description : The Brando Carnival lacked visual elements (poster, logo, web and audiovisual elements, and merchandise/goodies) to promote itself. Therefore, we created a graphic charter; we will detail the creative process for each element produced."
+competence : "Graphics"
 
 ---
+# Carnavale di Brandu
+The text discusses the creation of a graphic charter for the Carnaval de Brando, focusing on the poster, logotype, web and audiovisual elements, optimized photos, as well as goodies and merchandising.
 
-# Carnavale di Brandu 
-Le texte présente la création d'une charte graphique pour le Carnaval de Brando, mettant l'accent sur l'affiche, le logotype, les éléments web et audiovisuels, les photos optimisées, ainsi que les goodies et le merchandising.
-
-## Affiche
-L'affiche met en avant la composition visuelle, avec un titre accrocheur et une disposition des éléments incitant à une lecture de haut en bas. L'ambiance sombre du carnaval est renforcée par l'ajout de fumée, et le format A2 a été choisi pour sa norme internationale.
+## Poster
+The poster highlights visual composition, featuring a catchy title and a layout that encourages top-to-bottom reading. The carnival's dark atmosphere is enhanced by the addition of smoke, and the A2 format was chosen for its international standard.
 
 ![image2.png](/img/sae103/image2.png)
 
 ## Logotype
-Le logotype monogramme intègre des lettres texturées avec un motif bois, créant un effet 3D pour éviter un aspect plat. La typographie Krungthep est utilisée pour sa lisibilité et son impact.
+The monogram logotype incorporates textured letters with a wood pattern, creating a 3D effect to avoid a flat appearance. The Krungthep typography is used for its readability and impact.
 
 ![image8.png](/img/sae103/image8.png)
 
-## Éléments Web et Audiovisuels
-Des adaptations pour les réseaux sociaux sont réalisées avec une bannière et un logotype adapté au format carré. Une histoire (storie) est également créée pour les réseaux sociaux, en ajustant le texte et les personnages.
+## Web and Audiovisual Elements
+Adaptations for social media include a banner and a logotype suitable for the square format. A "storie" is also created for social media, adjusting the text and characters.
 
 ![image11.png](/img/sae103/image11.png)
 
-## Photos Optimisées
-Trois photos sont optimisées, chacune avec des ajustements de saturation, de contraste, et des filtres pour renforcer l'atmosphère du carnaval.
+## Optimized Photos
+Three photos are optimized, each with saturation and contrast adjustments, and filters to enhance the carnival atmosphere.
 
-### Photo optimisé n°1
+### Optimized Photo #1
 
 ![image12.png](/img/sae103/image12.png)
 
-### Photo optimisé n°2
+### Optimized Photo #2
 
 ![image13.png](/img/sae103/image13.png)
 
-### Photo optimisé n°3
+### Optimized Photo #3
 
 ![image14.png](/img/sae103/image14.png)
 
 ## Goodies, Merch
-Des modèles de t-shirts, pulls, porte-clés et tasses sont créés, associant le logo à des maquettes téléchargées sur internet.
+Models for t-shirts, sweaters, keychains, and mugs are created, combining the logo with mock-ups downloaded from the internet.
 
 ![image17.png](/img/sae103/image17.png)
 
@@ -50,16 +49,15 @@ Des modèles de t-shirts, pulls, porte-clés et tasses sont créés, associant l
 
 ![image19.png](/img/sae103/image19.png)
 
-
 ## Conclusion
-Le processus de création de la charte graphique du Carnaval de Brando est détaillé, soulignant les choix et les réflexions faits pour chaque élément. La gestion de projet, du cahier des charges à la définition des tâches, est également présentée.
+The process of creating the graphic charter for the Carnaval de Brando is detailed, highlighting the choices and considerations made for each element. Project management, from the specifications to task definition, is also presented.
 
-## Gestion de Projet
-Un cahier des charges énonce le contexte, les objectifs, le périmètre, les besoins fonctionnels, et les délais du projet. Les tâches sont définies en six jalons, avec des livrables spécifiques pour chaque étape.
+## Project Management
+A specifications document outlines the context, objectives, scope, functional needs, and project deadlines. Tasks are defined in six milestones, with specific deliverables for each stage.
 
-### Tableaux
+### Tables
 
-Tableau représentant les contraintes d'enchaînements, les dates estimées, les jalons, les tâches et les jalons.
+Table representing the constraints of sequences, estimated dates, milestones, tasks, and milestones.
 
 ![image21.png](/img/sae103/image21.png)
 
