@@ -1,5 +1,5 @@
 ---
-title: Affiche - Carnavale di Brandu
+title: Poster - Carnavale di Brandu
 heroImg: "SAE103.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2021

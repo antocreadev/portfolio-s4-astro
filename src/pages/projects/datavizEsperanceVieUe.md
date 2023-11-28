@@ -1,5 +1,5 @@
 ---
-title: Dataviz - Esperance de vie dans l'UE
+title: Dataviz - Life Expectancy in the EU
 heroImg: "SAE303.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2023

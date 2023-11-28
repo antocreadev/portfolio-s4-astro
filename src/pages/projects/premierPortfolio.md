@@ -1,5 +1,5 @@
 ---
-title: Mon premier portfolio
+title: First portfolio
 heroImg: "SAE105.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2021

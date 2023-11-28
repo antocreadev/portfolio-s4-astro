@@ -1,5 +1,5 @@
 ---
-title: Portfolio en PHP (MVC)
+title: Portfolio with PHP (MVC)
 heroImg: "SAE203.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2022
