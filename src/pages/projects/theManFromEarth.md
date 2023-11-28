@@ -4,7 +4,7 @@ heroImg: "SAE202.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2022
 description : "The subject of this SAE (Situations d'Apprentissage en Entreprise) revolves around the film 'The Man From Earth' by Richard Schenkman and involves the development of communication for this film, assuming its release in October of the coming year. Grouped in fours, our task was to work on three specific communication aspects: Communication strategy, the creation of graphic elements, and the production of audiovisual products such as a short film and a trailer"
-competence : "Graphisme Audiovisuel Communication"
+competence : "Graphics, Audiovisual, Communication"
 ---
 # Project: The Man from Earth Communication Campaign
 

@@ -4,7 +4,7 @@ heroImg: "SAE302.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2023
 description : "For this Student Business Project (SAE), we are tasked with creating packaging for a fictional beer, flavored with the freedom to choose the taste. We will explore each step of the beer creation process, starting with strategic positioning involving the choice of flavor, brand definition, and the development of appropriate graphics, including the logo, label, etc."
-competence : "Graphisme"
+competence : "Graphics"
 
 ---
 # Packaging of Arbouse Beer

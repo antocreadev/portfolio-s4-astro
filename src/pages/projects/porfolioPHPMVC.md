@@ -3,21 +3,15 @@ title: Portfolio en PHP (MVC)
 heroImg: "SAE203.webp"
 layout : "../../layouts/project.layout.astro"
 date : 2022
-description : "Dans le cadre de SAE 203, nous devons développer un site web de type
-portfolio avec une interface d’administration permettant de configurer,
-modifier, supprimer des éléments et d’alimenter le portfolio avec des projets
-matérialisés par du contenu multimédia comme des projets répertoriés dans
-une base de données. Ainsi, ce rapport présentera différents points qui
-retracent l’acheminement des réflexions, analyses et solutions afin de réaliser
-le travail demandé."
-competence : "FrontEnd BackEnd Graphisme"
+description : "This portfolio was created after 6 months of learning in the Bachelor's degree program in Multimedia and Internet Technologies (BUT MMI). It was built using HTML5, CSS3, and a few lines of Javascript. The purpose of this portfolio was to assess the learning progress and address the tasks assigned during the first semester."
+competence : "FrontEnd, BackEnd, Graphics"
 
 ---
 # Portfolio Website Development - BUT MMI - Frontend & Backend
 
 ## I. Introduction
 
-In SAE 203, the objective is to develop a portfolio website with an administration interface for configuring, modifying, and deleting elements. The portfolio should be populated with multimedia content representing projects stored in a database. This report outlines the thought process, analyses, and solutions used to accomplish the task.
+The objective is to develop a portfolio website with an administration interface for configuring, modifying, and deleting elements. The portfolio should be populated with multimedia content representing projects stored in a database. This report outlines the thought process, analyses, and solutions used to accomplish the task.
 
 ## II. Reflections, Analyses, and Solutions
 
